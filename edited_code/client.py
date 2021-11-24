@@ -1,4 +1,4 @@
-import json, pickle, hashlib, hmac
+import json, pickle, hashlib, hmac, getpass
 
 def fun(name: str,password: str) -> None:
     s = {"username":name,"password":hashlib.md5(password.encode()).hexdigest()}
@@ -6,8 +6,9 @@ def fun(name: str,password: str) -> None:
         signature = hmac.new(b'shared-public-key', pickle.dumps(s), hashlib.sha1).hexdigest()
         s.update({'signature': signature})
         f.write(json.dumps(s))
+    print('Added!')
 
 if __name__ == '__main__':
     u = input("Username : ")
-    p = input("Password : ")
+    p = getpass.getpass()
     fun(u,p)
