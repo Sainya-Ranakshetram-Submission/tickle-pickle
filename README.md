@@ -97,4 +97,6 @@ Next what I saw that password were not hashed, It is always [reccomended that pa
 ### 3. Using default input method for the password input
 It is always consider safe that when asking user for a password it should echoed in the console, but here in provided it was echoing since it was using default input method, so the password input method was change to [getpass](https://docs.python.org/3/library/getpass.html) , thus password is no longer echoed in the console.
 
-### 4. The inputted data wasn't signed
+### 4. The collected data wasn't signed using a public key
+The collected data wasn't signed using a public key, if this is not done whenever someone tampers the data then it could potentially harm the system. 
+So if a collected data is signed using a public key 
