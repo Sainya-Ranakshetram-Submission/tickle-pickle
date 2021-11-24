@@ -9,7 +9,13 @@ and here is the problem statement,
 - Modify both the files in such a way that the application is no more vulnerarble.
 ```
 
+***
+
 ## Solution
+
+## Problems addressed
+
+### 1. Using pickle module
 Here when I opened the two files, what I first saw that it was using pickle to serialize and deserialize the data,
 and in [Official Python Documentation](https://docs.python.org/3/library) it is mentioned that:
 ```
@@ -80,3 +86,15 @@ In general, I think most classes are safe - with exceptions like subprocess.Pope
 
 What you really need to be careful about is allowing access to functions (and other non-class callables), and how you handle the unpickled object.
 ```
+
+**So in order to resolve this what we have done that we have replace [pickle](https://docs.python.org/3/library/pickle.html#:~:text=Warning%20The%20pickle%20module%20is%20not%20secure.%20Only%20unpickle%20data%20you%20trust.) with [json](https://docs.python.org/3/library/json.html) as it is reccomended by python as module for safer serialization format!**
+
+
+
+### 2. Not Hashing the password
+Next what I saw that password were not hashed, It is always [reccomended that password should hashed](https://www.geeksforgeeks.org/importance-of-hashing/#:~:text=Hashing%20gives%20a%20more%20secure,doesn't%20define%20the%20speed.) , Thus now password are hashed then saved converted to its equilavent hex digit, making it more secure.
+
+### 3. Using default input method for the password input
+It is always consider safe that when asking user for a password it should echoed in the console, but here in provided it was echoing since it was using default input method, so the password input method was change to [getpass](https://docs.python.org/3/library/getpass.html) , thus password is no longer echoed in the console.
+
+### 4. The inputted data wasn't signed
