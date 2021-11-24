@@ -105,3 +105,9 @@ Thus in order to securely sign the data I have used the default cryptographic si
 ### 5. Program was not static typed
 If a function or a program is not static typed at the potential places then it could lead to unwanted and untrusted flow of objects(data).
 Thus if static typing is done at some places then, it could automatically stop the unwanted/untrusted flow of python objects and data.
+
+
+## Youtube Video Explaining all
+
+[![Tickle Pickle Challenge | Submission](http://img.youtube.com/vi/0Pyxteld-eM/0.jpg)](http://www.youtube.com/watch?v=0Pyxteld-eM "Tickle Pickle Challenge | Submission")
+
