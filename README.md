@@ -109,5 +109,5 @@ Thus if static typing is done at some places then, it could automatically stop t
 
 ## Youtube Video Explaining all
 
-[![Tickle Pickle Challenge | Submission](http://img.youtube.com/vi/0Pyxteld-eM/0.jpg)](http://www.youtube.com/watch?v=0Pyxteld-eM "Tickle Pickle Challenge | Submission | Sainya Ranakshetram")
+[![Tickle Pickle Challenge | Submission](http://img.youtube.com/vi/0Pyxteld-eM/0.jpg)](http://www.youtube.com/watch?v=0Pyxteld-eM "Tickle Pickle Challenge | Submission")
 
