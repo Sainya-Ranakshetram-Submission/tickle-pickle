@@ -101,3 +101,7 @@ It is always consider safe that when asking user for a password it should echoed
 The collected data wasn't signed using a public key, if this is not done whenever someone tampers the data then it could potentially harm the system. 
 So if a collected data is signed using a public key then the any data tampering could be prevented or detected easily thus saving system from any potential harm.
 Thus in order to securely sign the data I have used the default cryptographic signin module [hmac](https://docs.python.org/3/library/hmac.html)
+
+### 5. Program was not static typed
+If a function or a program is not static typed at the potential places then it could lead to unwanted and untrusted flow of objects(data).
+Thus if static typing is done at some places then, it could automatically stop the unwanted/untrusted flow of python objects and data.
