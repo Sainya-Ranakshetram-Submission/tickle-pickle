@@ -13,6 +13,10 @@ and here is the problem statement,
 
 ## Solution
 
+```
+Flag: Usage of pickle module itself and usage of "pickle.loads" in server.py in line 7
+```
+
 ## Problems addressed
 
 ### 1. Using pickle module
